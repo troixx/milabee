@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title data-content-key='meta.title'>Store | Mila Bee Studios</title>
+  <meta name='description' content='Shop Mila Bee Studios retail favorites and manage your cart.' data-content-key='meta.description' data-content-target='meta'>
+  <meta name='theme-color' content='#d8c5ab'>
+  <link rel='icon' href='assets/images/logo.png' type='image/png'>
+  <link rel='apple-touch-icon' href='assets/images/logo.png'>
+  <link rel='stylesheet' href='assets/css/site.css'>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap' rel='stylesheet'>
+  <script defer src='assets/js/main.js'></script>
+</head>
+<body data-page='store'>
+  <header class='site-header'>
+    <div class='container nav-row'>
+      <a class='logo' href='index.html'>
+        <img src='assets/images/logo.png' alt='Mila Bee Studios logo' data-content-key='global.nav.logo-image' data-content-target='src' data-content-scope='global'>
+        <span data-content-key='global.nav.logo-text' data-content-scope='global'>Mila Bee Studios</span>
+      </a>
+      <button class='menu-toggle' type='button' aria-expanded='false' aria-controls='site-nav'>Menu</button>
+      <nav id='site-nav' class='site-nav' aria-label='Primary'>
+        <a href='our-story.html' data-page-link='our-story' data-content-key='global.nav.our-story.label' data-content-scope='global'>Our Story</a>
+        <a href='booking.html' data-page-link='booking' data-content-key='global.nav.booking.label' data-content-scope='global'>Booking</a>
+        <a href='policies.html' data-page-link='policies' data-content-key='global.nav.policies.label' data-content-scope='global'>Policies</a>
+        <a href='faq.html' data-page-link='faq' data-content-key='global.nav.faq.label' data-content-scope='global'>FAQ</a>
+        <a href='stylists.html' data-page-link='stylists' data-content-key='global.nav.stylists.label' data-content-scope='global'>Stylists</a>
+        <a href='join-our-team.html' data-page-link='join-our-team' data-content-key='global.nav.join.label' data-content-scope='global'>Join Our Team</a>
+        <a href='contact.html' data-page-link='contact' data-content-key='global.nav.contact.label' data-content-scope='global'>Contact</a>
+        <a href='store.html' data-page-link='store' data-content-key='global.nav.store.label' data-content-scope='global'>Store</a>
+        <a href='login.html' data-page-link='login' data-content-key='global.nav.login.label' data-content-scope='global'>Store Login</a>
+        <a class='nav-cta' href='https://book.squareup.com/appointments/ybo95yta9iu845/location/LF318CTXFNTEK/services' target='_blank' rel='noopener' data-content-key='global.nav.book.label' data-content-href-key='global.nav.book.href' data-content-scope='global'>Book Now</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class='hero hero--plain'>
+      <div class='container hero-content'>
+        <p class='section-kicker' data-content-key='store.hero.kicker'>Studio Store</p>
+        <h1 class='hero-title' data-content-key='store.hero.title'>Mila Bee Studios Store</h1>
+        <p class='hero-subtitle' data-content-key='store.hero.subtitle'>Shop curated hair care essentials and save your cart to your account.</p>
+      </div>
+    </section>
+
+    <section class='section'>
+      <div class='container store-layout'>
+        <div>
+          <p class='section-kicker' data-content-key='store.section.kicker'>Retail Favorites</p>
+          <h2 data-content-key='store.section.title'>Shop the collection</h2>
+          <p class='lead' data-content-key='store.section.lead'>Curated products used by Mila Bee Studios professionals.</p>
+          <div class='store-status status-message' data-store-status>Sign in to add items to your cart. <a href='login.html'>Store Login</a>.</div>
+          <p class='status-message' data-store-message></p>
+          <div class='store-grid' data-product-list></div>
+        </div>
+        <aside class='cart-panel'>
+          <div class='cart-header'>
+            <div>
+              <p class='section-kicker' data-content-key='store.cart.kicker'>Your Cart</p>
+              <h2 data-content-key='store.cart.title'>Cart</h2>
+              <p class='small-note'><span data-content-key='store.cart.signedin'>Signed in as</span> <span data-user-email>guest</span></p>
+            </div>
+            <button class='btn btn-secondary btn-small' type='button' data-signout hidden>Sign out</button>
+          </div>
+          <p class='small-note' data-cart-empty data-content-key='store.cart.empty'>Your cart is empty.</p>
+          <div class='cart-items' data-cart-items></div>
+          <div class='cart-total-row'>
+            <span data-content-key='store.cart.total'>Total</span>
+            <strong data-cart-total>$0.00</strong>
+          </div>
+          <p class='status-message' data-cart-message></p>
+          <button class='btn' type='button' data-checkout disabled data-content-key='store.cart.checkout'>Place Order</button>
+          <p class='small-note' data-content-key='store.cart.note'>Orders are saved to your account. Payment and pickup are coordinated by the studio.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class='site-footer'>
+    <div class='container footer-grid'>
+      <div class='footer-card'>
+        <h2 data-content-key='global.footer.title' data-content-scope='global'>Mila Bee Studios</h2>
+        <p data-content-key='global.footer.tagline' data-content-scope='global'>Luxury. Creativity. Growth.</p>
+        <p><span data-content-key='global.footer.email.label' data-content-scope='global'>Email us at </span><a href='mailto:milabeestudios@gmail.com' data-content-key='global.footer.email.address' data-content-href-key='global.footer.email.href' data-content-scope='global'>milabeestudios@gmail.com</a>.</p>
+        <div class='footer-actions'>
+          <a class='btn btn-secondary' href='https://linktr.ee/milabeestudios' target='_blank' rel='noopener' data-content-key='global.footer.linktree.label' data-content-href-key='global.footer.linktree.href' data-content-scope='global'>Visit our Linktree</a>
+        </div>
+      </div>
+      <div class='footer-links'>
+        <h3 data-content-key='global.footer.explore.title' data-content-scope='global'>Explore</h3>
+        <a href='our-story.html' data-content-key='global.footer.explore.our-story.label' data-content-scope='global'>Our Story</a>
+        <a href='booking.html' data-content-key='global.footer.explore.booking.label' data-content-scope='global'>Booking</a>
+        <a href='policies.html' data-content-key='global.footer.explore.policies.label' data-content-scope='global'>Policies</a>
+        <a href='faq.html' data-content-key='global.footer.explore.faq.label' data-content-scope='global'>FAQ</a>
+        <a href='stylists.html' data-content-key='global.footer.explore.stylists.label' data-content-scope='global'>Stylists</a>
+        <a href='join-our-team.html' data-content-key='global.footer.explore.join.label' data-content-scope='global'>Join Our Team</a>
+        <a href='contact.html' data-content-key='global.footer.explore.contact.label' data-content-scope='global'>Contact</a>
+        <a href='store.html' data-content-key='global.footer.explore.store.label' data-content-scope='global'>Store</a>
+        <a href='login.html' data-content-key='global.footer.explore.login.label' data-content-scope='global'>Store Login</a>
+        <a href='https://book.squareup.com/appointments/ybo95yta9iu845/location/LF318CTXFNTEK/services' target='_blank' rel='noopener' data-content-key='global.footer.explore.book.label' data-content-href-key='global.footer.explore.book.href' data-content-scope='global'>Book Daily Chair Rental</a>
+      </div>
+    </div>
+    <div class='container footer-bottom'>
+      <span data-content-key='global.footer.bottom.left' data-content-scope='global'>Mila Bee Studios</span>
+      <span data-content-key='global.footer.bottom.right' data-content-scope='global'>milabeestudios.com</span>
+    </div>
+  </footer>
+  <script type='module' src='assets/js/content.js'></script>
+  <script type='module' src='assets/js/store.js'></script>
+</body>
+</html>
